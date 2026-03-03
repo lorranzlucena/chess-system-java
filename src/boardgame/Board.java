@@ -35,8 +35,16 @@ public class Board {
 		this.columns = columns;
 	}
 
+	 //Recebe linha e coluna como números inteiros e retorna a peça que está nessa posição.
+	public Piece piece(int row, int column) {
+		return pieces[row][column];
+		
+	}
 	
-	
+	//Recebe um objeto do tipo Position e retorna a peça nessa posição.
+	public Piece piece (Position position) {
+		return pieces[position.getRow()][position.getColoumn()];
+	}
 	
 	
 }
